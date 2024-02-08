@@ -91,6 +91,7 @@ body {
 
 .container__alerts {
     width: 30%;
+    height: 48%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,6 +110,11 @@ body {
     font-weight: 400;
     font-size: 20px;
     color: var(--color-text2);
+}
+
+#btnCopiar {
+    display: none;
+    height: 30%;
 }
 
 @media (max-width: 900px) {
