@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+</head>
+
+<body>
+    <header class="logo">
+        <img src="assets/Vector_a.png" alt="logo da alura">
+        <h1 class="name_project">Decodifica Challenge Alura</h1>
+    </header>
+    <main class="container">
+        <section class="container__content">
+            <div class="content__input">
+                <textarea class="text__area" name="text_input" id="text_input" cols="50" rows="15"
+                    placeholder="Digite seu texto"></textarea>
+                <div class="content__button">
+                    <div class="content__button__alert">
+                        <img src="assets/alert_icon.png" alt="icone de alerta">
+                        <h4>Apenas letras sem acento.</h4>
+                    </div>
+                    <div class="content__button__box">
+                        <button class="button__action" id="criptografar" onclick="encryptMessage()">criptografar</button>
+                        <button class="button__action" id="descriptografar" onclick="decryptMessage()">descriptografar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container__alerts">
+            <img class="img_alert" src="assets/High_quality_products_11.png" alt="mulher olhando pela lupa">
+            <h3 class="message__alert">Nenhuma mensagem encontrada</h3>
+            <p class="message__alert_alternative">Digite um texto que você
+                deseja criptografar ou descriptografar</p>
+        </section>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+
+</html>

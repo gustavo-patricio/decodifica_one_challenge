@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --primary-color: #F3F5FC;
+    --secondary-color: #1ABC99;
+    --color-text1: #343A40;
+    --color-text2: #495057;
+    --color-button: #D8DFE8;
+    --color-button-hover: #0A3871;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Inter';
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+
+}
+
+.logo {
+    padding: 2% 1% 2% 5%;
+    display: flex;
+}
+
+.name_project {
+    padding-left: 5%;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    height: 85%;
+}
+
+.container__content {
+    display: flex;
+    width: 50%;
+}
+
+
+.text__area {
+    display: flex;
+    border: none;
+    outline: none;
+    color: var(--color-text1);
+    resize: none;
+    font-weight: 400;
+    font-size: 1.3rem;
+    width: 99%;
+    background-color: var(--primary-color);
+}
+
+.content__button__alert {
+    display: none;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.content__button__box {
+    display: flex;
+    text-align: center;
+    height: 50px;
+}
+
+
+.button__action {
+    width: 30%;
+    height: 90%;
+    border: 1px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 0 30px;
+    background-color: var(--color-button);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.button__action:hover {
+    background-color: var(--color-button-hover);
+    color: #F3F5FC;
+}
+
+.container__alerts {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.message__alert {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-text);
+}
+
+.message__alert_alternative {
+    padding-top: 3%;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-text2);
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__content {
+        justify-content: center;
+    }
+
+    .container__alerts {
+        padding-top: 10%;
+        width: 90%;
+    }
+
+    .img_alert {
+        display: none;
+    }
+
+}
