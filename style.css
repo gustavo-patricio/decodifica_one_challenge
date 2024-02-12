@@ -24,6 +24,7 @@ body {
 }
 
 .logo {
+    box-sizing: border-box;
     padding: 2% 1% 2% 5%;
     display: flex;
 }
@@ -35,6 +36,7 @@ body {
 }
 
 .container {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     width: 98%;
